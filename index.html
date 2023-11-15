@@ -152,15 +152,23 @@ window.onload = function(){disableSelection(document.body);};
     .overlay-text {
   width: 100%;
   position: absolute;
-  top: 50%;
+  bottom: 10%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -10%);
   text-align: right;
-  font-size: 1.4vh; /* Adjust the font size based on the image size */
+  font-size: 13px; /* Adjust the font size based on the image size */
   color: white; /* Adjust text color as needed */
-  font-weight: bold; /* Adjust font weight as needed */
-  background-color: rgba(0, 0, 0, 0.68); /* Adjust background color and opacity as needed */
+  font-weight:semibold; /* Adjust font weight as needed */
+  background-color: rgba(0, 0, 0, 0.78); /* Adjust background color and opacity as needed */
   padding: 6px; /* Adjust padding as needed */
+}
+
+@media screen and  (max-width: 768px) {
+   .overlay-text {
+    width: 50%;
+    font-size: 10px;
+    font-weight: bold;
+   } 
 }
 
 .flaticon-search {
@@ -1327,8 +1335,8 @@ document.addEventListener("DOMContentLoaded", function () {
         // Prevent click on <a> tags within <li> elements
         linkTags.forEach(function (link) {
             link.addEventListener('click', function (event) {
-                event.preventDefault();
-                event.stopPropagation();
+                // event.preventDefault();
+                // event.stopPropagation();
             });
         });
 
@@ -1341,8 +1349,8 @@ allLinks.forEach(link => {
     // Check if the link has the class 'float'
     if (!this.classList.contains('float')) {
       // Prevent the default behavior if the link doesn't have the class
-      event.preventDefault();
-      console.log('Link prevented:', this.href);
+    //   event.preventDefault();
+    //   console.log('Link prevented:', this.href);
     } else {
       // Allow the default behavior for links with the 'float' class
       console.log('Link allowed:', this.href);
@@ -1370,6 +1378,7 @@ allLinks.forEach(link => {
 
 
 </script>
+
    
     </body>
 </html>

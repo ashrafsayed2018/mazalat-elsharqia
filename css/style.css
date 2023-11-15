@@ -6416,3 +6416,7 @@ Start Service Details Two Style
 
 #InstaGrAM {display:none;} @media screen and (max-width:650px){#InstaGrAM {display:block; position:fixed; text-decoration:none; z-index:9999;width:65px; height:65px; border-radius:80px; border:2px solid #fff; bottom:15px;right:20px;margin-bottom:70px;background:url(../assets/instagram-512.png) center/50px 50px no-repeat #fff;}} 
 #SnaPcHat {display:none;} @media screen and (max-width:650px){#SnaPcHat {display:block; position:fixed; text-decoration:none; z-index:9999;width:65px; height:65px; border-radius:80px; border:2px solid #fff; bottom:15px;right:20px;margin-bottom:140px;background:url(https://mzshrjia.com/assets/snapchat-512.png) center/50px 50px no-repeat #fff;}} 
+
+.logo  .logo-image {
+    display: none!important;
+}
